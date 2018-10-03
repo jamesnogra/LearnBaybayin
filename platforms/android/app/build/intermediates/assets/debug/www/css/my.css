@@ -1,0 +1,17 @@
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color: #fff2cc;
+}
+
+#my-sidebar {
+    background-color: #fff2cc;
+}
+
+.w3-container {
+    padding-top: 10px;
+}
+.w3-input {
+    margin-bottom: 5px;
+}
