@@ -35,6 +35,19 @@ $(document).ready(function() {
 			customAlert("Educational Attainment Error", "Please select your educational attainment.", "OK");
 			return;
 		}
+		addLoader();
+		$.post("http://learnbaybayinbackend.iamcebu.com/index.php/user/register", {email:email, password:password, name:name, gender:gender, age:age, education:education}, function(result) {
+			if (result.status==2) {
+				customAlert("Email Error", "The email you entered is used by another registered account. Use another email.", "OK");
+				removeLoader();
+				return;
+			}
+			localStorage.setItem("login_token", result.user.login_token);
+			localStorage.setItem("name", result.user.name);
+			localStorage.setItem("email", result.user.email);
+			localStorage.setItem("id", result.user.id);
+			window.location = "survey.html";
+		});
 	});
 
 });

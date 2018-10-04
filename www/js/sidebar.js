@@ -1,10 +1,16 @@
-closeSidebar();
+closeSidebar(1);
 
-function openSidebar() {
-	$("#my-sidebar").css("display", "block");
+function openSidebar(speed) {
+	//$("#my-sidebar").css("display", "block");
+	$('#my-sidebar').stop().animate({
+	    left:'0px'
+	}, speed, function() {});
 }
-function closeSidebar() {
-	$("#my-sidebar").css("display", "none");
+function closeSidebar(speed) {
+	//$("#my-sidebar").css("display", "none");
+	$('#my-sidebar').stop().animate({
+	    left:'-65%'
+	}, speed, function() {});
 }
 
 $(document).click(function (event) {
@@ -12,13 +18,13 @@ $(document).click(function (event) {
 	$('body,html').click(function (e) {
 		var container = $("#my-sidebar");
 		if (!container.is(e.target) && container.has(e.target).length === 0) {
-			closeSidebar();
+			closeSidebar(100);
 		}
 	});
 
 	$('#open-sidebar-icon').click(function (evt) {
 	    evt.stopPropagation();
-	    openSidebar();
+	    openSidebar(100);
 	});
 
 });

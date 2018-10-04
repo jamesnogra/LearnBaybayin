@@ -14,23 +14,53 @@
     <body>
         
         <nav class="w3-sidebar w3-bar-block w3-card" id="my-sidebar">
-            <!--<span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>-->
-            <a class="w3-bar-item w3-button" href="signup.html">Sign Up</a>
+            <h3 class="w3-bar-item">Hi <span id="user-name"></span>!</h3>
+            <a class="w3-bar-item w3-button" href="help.html">Help</a>
+            <a class="w3-bar-item w3-button" href="privacy.html">Privacy Statement</a>
+            <a class="w3-bar-item w3-button" href="signout.html">Sign Out</a>
         </nav>
 
         <header class="w3-top w3-bar w3-theme" id="main-header">
-            <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" id="open-sidebar-icon" onclick="openSidebar()"><i class="fa fa-bars" aria-hidden="true"></i></button>
-            <h1 class="w3-bar-item" id="main-header-title">Register</h1>
+            <button class="w3-bar-item w3-button w3-xxlarge w3-hover-theme" id="open-sidebar-icon" onclick="openSidebar(100)"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            <h3 class="w3-bar-item" id="main-header-title">Learn Baybayin</h3>
         </header>
 
-        <div class="w3-container" style="margin-top:90px">
-            Content
+        <div class="w3-container" style="margin-top:72px">
+            <div class="stage-container stage-complementary-3 glossy-frame" onClick="goToStage(1);">
+                <h5>Stage 1: Introduction</h5>
+                <div>This stage will teach you about the Baybayin script, how to draw the strokes, and many more...</div>
+                <h5>Score: 0</h5>
+            </div>
+            <div class="stage-container stage-complementary-1 glossy-frame">
+                <h5>Stage 2: Learning the Vowels</h5>
+                <div>This stage will teach you how to write the three vowel characters (A, E/I, and O/U) of the Baybayin script.</div>
+                <h5>Score: 0</h5>
+            </div>
+            <div class="stage-container stage-complementary-2 glossy-frame">
+                <h5>Stage 3: Writing the Consonants I</h5>
+                <div>This stage will teach you how to write the first five consonant characters (B, K, D/R, G, and H) of the Baybayin script.</div>
+                <h5>Score: 0</h5>
+            </div>
+            <div class="stage-container stage-complementary-3 glossy-frame">
+                <h5>Stage 4: Writing the Consonants II</h5>
+                <div>This stage will teach you how to write the second five consonant characters (L, M, N, NG, and P) of the Baybayin script.</div>
+                <h5>Score: 0</h5>
+            </div>
+            <div class="stage-container stage-complementary-1 glossy-frame">
+                <h5>Stage 5: Writing the Consonants III</h5>
+                <div>This stage will teach you how to write the last four consonant characters (S, T, W, and Y) of the Baybayin script.</div>
+                <h5>Score: 0</h5>
+            </div>
         </div>
 
         <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/custom-alert.js"></script>
         <script type="text/javascript" src="js/jquery3.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/sidebar.js"></script>
+        <script type="text/javascript" src="js/loader.js"></script>
+        <script type="text/javascript" src="js/check-login.js"></script>
+        <script type="text/javascript" src="js/stages.js"></script>
     </body>
 
 
