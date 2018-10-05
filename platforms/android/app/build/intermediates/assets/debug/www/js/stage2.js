@@ -70,15 +70,15 @@ function countTime() {
 	var seconds_elapsed = Math.round(time_difference);
 }
 
-function saveScoreToDB() {
+function saveScoreToDB(current_character) {
 	var score_data = {
 		login_token: 	localStorage.getItem("login_token"),
 		score:  		score_for_this_level,
 		time:  			time_difference,
 		stage:  		'STAGE 2',
 		level:  		'LEVEL ' + at_index,
-		character:  	'',
-		details:  		'No character info because this is stage 1.',
+		character:  	current_character,
+		details:  		'This score data is from stage 2.',
 	};
 	$.post("http://learnbaybayinbackend.iamcebu.com/index.php/score/add-score", score_data, function(result) {
 		//none
@@ -109,7 +109,7 @@ function submitAndUpload(current_index) {
 				$('.score-value').html(total_score);
     		}
     	}
-		saveScoreToDB();
+		saveScoreToDB(all_vowels[current_index]);
 		if (at_index<all_vowels.length) {
 			showCharacter();
 		} else {
