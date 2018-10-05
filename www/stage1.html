@@ -31,7 +31,7 @@
 
         <header class="w3-top w3-bar w3-theme" id="main-header">
             <button class="w3-bar-item w3-button w3-xxlarge w3-hover-theme" id="open-sidebar-icon" onclick="openSidebar(100)"><i class="fa fa-bars" aria-hidden="true"></i></button>
-            <h3 class="w3-bar-item" id="main-header-title">Stage 1</h3>
+            <h3 class="w3-bar-item" id="main-header-title">Introduction</h3>
         </header>
 
         <div class="w3-container w3-center" style="margin-top:72px">
@@ -44,8 +44,22 @@
         </div>
 
         <div id="score-card">
-            <div id="score-value">0</div>
+            <div class="score-value">0</div>
             <div>Score</div>
+        </div>
+
+        <div id="final-score" class="w3-modal" style="display:none;">
+            <div class="w3-modal-content w3-animate-top w3-card-4">
+                <header class="w3-container w3-theme"> 
+                    <h3>Your Score is <span class="score-value"></span>!</h3>
+                </header>
+                <div class="w3-container">
+                    <p>For this stage you got <span class="score-value"></span> points. <span id="final-message"></span></p>
+                </div>
+                <footer class="w3-container w3-theme w3-display-container">
+                    <p><center><button id="final-score-ok-button" class="w3-button w3-black w3-round-large">OK</button></center></p>
+                </footer>
+            </div>
         </div>
 
         <script type="text/javascript" src="cordova.js"></script>

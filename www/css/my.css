@@ -110,7 +110,29 @@ img {
 	padding: 5px;
 	border-radius: 10px;
 	z-index: 100;
+    opacity: 0.8;
 }
-#score-value {
+.score-value {
 	font-size: 28px;
+}
+
+.fa-bars {
+    margin-top: 10px;
+}
+
+#final-score {
+    z-index: 150;
+}
+
+#three-sample-characters-container {
+    text-align: center;
+}
+
+.sample-character {
+    width:28%;
+    margin: 5px;
+}
+
+#sheet {
+    border-radius: 10px;
 }
