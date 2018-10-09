@@ -31,7 +31,7 @@ $(document).ready(function() {
 			top: 0px;\
 			left: 0px;\
 			background-color: #FFFFFF;\
-			opacity: 0.9;\
+			opacity: 0.75;\
 			z-index: 100;\
 			padding-top: 50%;\
 		}\

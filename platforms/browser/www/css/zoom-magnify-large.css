@@ -1,0 +1,49 @@
+.rotate-scale-up-large {
+	animation-name: rotate-scale-uplarge;
+  animation-duration: 2.0s;
+  animation-fill-mode: forwards;
+  position: fixed;
+  z-index: 200;
+  text-align: center;
+  width: 100%;
+  top: 100%;
+  left: 100%;
+  color: #ffc107;
+}
+
+@keyframes rotate-scale-uplarge {
+  0% {
+    opacity: 0;
+    top: 10%;
+    left: 0%;
+    font-size: 150vw;
+    display: block;
+  }
+  50% {
+    opacity: 1;
+    top: 10%;
+    left: 0%;
+    font-size: 70vw;
+  }
+  99% {
+    opacity: 0;
+    top: 5%;
+    left: 35%;
+    font-size: 15vw;
+  }
+  100% {
+    display: none;
+  }
+}
+
+#large-score-animation {
+  opacity: 0;
+  position: fixed;
+  top: 100%;
+  left: 100%;
+  text-shadow: 4px 4px #000000;
+}
+
+.large-score-red {
+  color: #e62e00;
+}
