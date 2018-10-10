@@ -5,6 +5,7 @@ body {
     background-color: #fff2cc;
     /*font-family: 'CrayonFont'!important;*/
     font-family: 'Schoolbell', cursive;
+    font-size: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -118,7 +119,7 @@ img {
 
 #score-card {
 	position: fixed;
-	top: 34px;
+	top: 10px;
 	right: 10px;
 	width: 75px;
 	height: 75px;
@@ -128,7 +129,7 @@ img {
 	padding: 5px;
 	border-radius: 10px;
 	z-index: 200;
-    opacity: 0.8;
+    opacity: 1;
 }
 .score-value {
 	font-size: 28px;
@@ -147,10 +148,16 @@ img {
 }
 
 .sample-character {
-    width:28%;
+    width: 28%;
     margin: 5px;
 }
 
+.sample-character-small {
+    width: 10%;
+    margin: 2px;
+}
+
 #sheet {
-    border-radius: 10px;
+    border-radius: 10px!important;
+    overflow: hidden!important;
 }

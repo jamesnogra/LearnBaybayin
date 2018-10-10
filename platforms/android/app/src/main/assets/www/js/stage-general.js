@@ -4,6 +4,7 @@ var total_score = 0;
 var score_for_this_level = 0;
 var time_difference = 0;
 var temp_message = '';
+var current_character;
 
 $(document).ready(function() {
 
@@ -25,6 +26,9 @@ $(document).ready(function() {
 		at_index++;
 		countTime();
 		addLoader();
+		if (stage == 10) { //for stage 10, we randomize the sentences
+			current_sentence_array = test_baybayin.tokenize(array_of_sentences[at_index]);
+		}
 	});
 
 	$('#final-score-ok-button').click(function() {
@@ -61,14 +65,33 @@ $(document).ready(function() {
 function showCharacter() {
 	var temp_html = '';
 	start_time = new Date();
-	for (var x=1; x<=3; x++) {
-		temp_html += '<img src="img/characters/'+specific_characters[at_index]+'.'+x+'.bmp" class="sample-character" />';
+	if (stage != 10) {
+		current_character = specific_characters[at_index];
+		for (var x=1; x<=3; x++) {
+			temp_html += '<img src="img/characters/'+current_character+'.'+x+'.bmp" class="sample-character" />';
+		}
+		$('#three-sample-characters-container').html(temp_html);
+		if (stage>=9) { //hide sample images after level 9
+			$(".sample-character").css("filter", "blur("+window.innerWidth/25+"px)");
+		}
+		$('.character-represent').html(current_character.replace("_", "/").toUpperCase());	
+	} else { //this is for stage 10
+		var temp_index;
+		current_character = 'space';
+		while (current_character=='space') {
+			temp_index = Math.floor(Math.random()*current_sentence_array.length);
+			current_character = current_sentence_array[temp_index];
+		}
+		console.log(current_character + ' at '+ temp_index);
+		for (var x=0; x<current_sentence_array.length; x++) {
+			if (x != temp_index) {
+				temp_html += '<img src="img/characters/'+current_sentence_array[x]+'.2.bmp" class="sample-character-small" />';
+			} else {
+				temp_html += '<img src="img/characters/missing.bmp" class="sample-character-small" />';
+			}
+		}
+		$('#sentence-container').html(temp_html);
 	}
-	$('#three-sample-characters-container').html(temp_html);
-	if (stage>=9) { //hide sample images after level 9
-		$(".sample-character").css("filter", "blur("+window.innerWidth/25+"px)");
-	}
-	$('.character-represent').html(specific_characters[at_index].replace("_", "/").toUpperCase());
 }
 
 function countTime() {
@@ -106,7 +129,7 @@ function submitAndUpload(current_index) {
     var pic = document.getElementById("sheet-small").toDataURL("image/png");
     pic = pic.replace(/^data:image\/(png|jpg);base64,/, "");
     // Sending the image data to Server
-    $.post("http://45.62.253.243:8080/classify-image", {'curent_character':specific_characters[at_index], 'imageData':pic}, function(result) {
+    $.post("http://45.62.253.243:8080/classify-image", {'curent_character':current_character, 'imageData':pic}, function(result) {
     	removeLoader();
     	if (result.status == -1) {
     		at_index--;
@@ -115,7 +138,7 @@ function submitAndUpload(current_index) {
     		return;
     	}
     	for (var x=0; x<result.all_chars.length; x++) {
-    		if (specific_characters[current_index].replace("_", "/").toUpperCase() == result.all_chars[x]) {
+    		if (current_character.replace("_", "/").toUpperCase() == result.all_chars[x]) {
     			score_for_this_level = Math.round(result.result_float[x]*10);
     			total_score += score_for_this_level;
 			    $('#large-score-animation').html(score_for_this_level);
@@ -134,7 +157,7 @@ function submitAndUpload(current_index) {
 				$('.score-value').html(total_score);
     		}
     	}
-		saveScoreToDB(specific_characters[current_index]);
+		saveScoreToDB(current_character);
 		if (at_index<specific_characters.length) {
 			showCharacter();
 		} else {

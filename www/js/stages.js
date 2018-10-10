@@ -58,4 +58,11 @@ function goToStage(stage_num) {
 		}
 		window.location = "stage-general.html?stage=9";
 	}
+	if (stage_num==10) {
+		if (stage_score[9]<100) {
+			customAlert("Low Score", "Your score in stage 9 is not enough. Please try again on that stage.", "OK");
+			return;
+		}
+		window.location = "stage10.html";
+	}
 }
