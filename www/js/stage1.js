@@ -5,8 +5,8 @@ var tutorial_list = [
 	['The term baybayin literally means "to spell, write, and syllabize" in Tagalog.', 5],
 	['The characters for E & I are the same. So is for the characters of O & U and C & K.<p><img src="css/same-meaning.bmp" width="100%" /></p>The word LALAKE and LALAKI are spelled using the same Baybayin characters. There\'s only few words that are spelled using the same Baybayin characters but have different meanings.', 10],
 	['<p><img src="css/all-four-pa.bmp" width="100%" /></p>There are four ways a consonant Baybayin character can be represented. Adding a dot at the top of the consonant Baybayin character will make it pronounceable with E or I instead of A. Adding a dot at the bottom will make it pronounceable with O or U. While adding a cross sign at the bottom will lose its vowel companion sound.', 10],
-	['<p><img src="css/common-strokes.bmp" width="100%" /></p>The common strokes that are used in the Baybáyin characters are the \'S\', the wave, and the number 3.', 10],
-	['<p><img src="css/how-to.gif" width="50%" /></p>For the rest of the stages, this is how you would be writing/drawing your answers.', 5],
+	['<p><img src="css/common-strokes.bmp" width="100%" /></p>The common strokes that are used in the Baybayin characters are the \'S\', the wave, and the number 3.', 10],
+	['<p><img src="css/how-to.gif" width="65%" /></p>For the rest of the stages, this is how you would be writing/drawing your answers.', 5],
 ];
 var at_index = 0;
 var start_time, end_time;
