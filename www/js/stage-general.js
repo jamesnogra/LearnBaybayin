@@ -65,6 +65,9 @@ function showCharacter() {
 		temp_html += '<img src="img/characters/'+specific_characters[at_index]+'.'+x+'.bmp" class="sample-character" />';
 	}
 	$('#three-sample-characters-container').html(temp_html);
+	if (stage>=9) { //hide sample images after level 9
+		$(".sample-character").css("filter", "blur("+window.innerWidth/25+"px)");
+	}
 	$('.character-represent').html(specific_characters[at_index].replace("_", "/").toUpperCase());
 }
 

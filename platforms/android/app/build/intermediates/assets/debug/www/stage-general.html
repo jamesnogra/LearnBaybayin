@@ -11,10 +11,12 @@
         <link rel="stylesheet" href="css/my.css">
         <link rel="stylesheet" href="css/zoom-magnify.css">
         <link rel="stylesheet" href="css/zoom-magnify-large.css">
+        <link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet">
         <meta http-equiv="Access-Control-Allow-Origin" content="*">
         <!--<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"> </script>-->
         <script>
             var stage = getQueryVariable('stage');
+            var all_characters = ['a', 'e_i', 'o_u', 'ba', 'ka', 'da', 'ga', 'ha', 'la', 'ma', 'na', 'nga', 'pa', 'ra', 'sa', 'ta', 'wa', 'ya', 'be_bi', 'ke_ki', 'de_di', 'ge_gi', 'he_hi', 'le_li', 'me_mi', 'ne_ni', 'nge_ngi', 'pe_pi', 're_ri', 'se_si', 'te_ti', 'we_wi', 'ye_yi', 'bo_bu', 'ko_ku', 'do_du', 'go_gu', 'ho_hu', 'lo_lu', 'mo_mu', 'no_nu', 'ngo_ngu', 'po_pu', 'ro_ru', 'so_su', 'to_tu', 'wo_wu', 'yo_yu', 'b', 'k', 'd', 'g', 'h', 'l', 'm', 'n', 'ng', 'p', 'r', 's', 't', 'w', 'y'];
             var specific_characters;
             if (stage==2) {
                 specific_characters = ['a', 'e_i', 'o_u'];
@@ -24,6 +26,16 @@
                 specific_characters = ['la', 'ma', 'na', 'nga', 'pa'];
             } else if (stage==5) {
                 specific_characters = ['ra', 'sa', 'ta', 'wa', 'ya'];
+            } else if (stage==6) {
+                specific_characters = ['be_bi', 'ke_ki', 'de_di', 'ge_gi', 'he_hi', 'le_li', 'me_mi', 'ne_ni', 'nge_ngi', 'pe_pi', 're_ri', 'se_si', 'te_ti', 'we_wi', 'ye_yi'];
+            } else if (stage==7) {
+                specific_characters = ['bo_bu', 'ko_ku', 'do_du', 'go_gu', 'ho_hu', 'lo_lu', 'mo_mu', 'no_nu', 'ngo_ngu', 'po_pu', 'ro_ru', 'so_su', 'to_tu', 'wo_wu', 'yo_yu'];
+            } else if (stage==8) {
+                specific_characters = ['b', 'k', 'd', 'g', 'h', 'l', 'm', 'n', 'ng', 'p', 'r', 's', 't', 'w', 'y'];
+            } else if (stage==9) {
+                all_characters = shuffleArray(all_characters);
+                specific_characters = all_characters.slice(0, 20);
+                console.log(specific_characters);
             }
             function getQueryVariable(variable) {
                 var query = window.location.search.substring(1);
@@ -33,6 +45,10 @@
                     if(pair[0] == variable){return pair[1];}
                 }
                 return(false);
+            }
+            function shuffleArray(o) {
+                for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+                return o;
             }
         </script>
         <style>
@@ -47,6 +63,7 @@
 
     <body>
         
+        <div id="my-sidebar-filler"></div>
         <nav class="w3-sidebar w3-bar-block w3-card" id="my-sidebar">
             <h3 class="w3-bar-item">Hi <span id="user-name"></span>!</h3>
             <a class="w3-bar-item w3-button" href="help.html">Help</a>
@@ -56,13 +73,15 @@
 
         <header class="w3-top w3-bar w3-theme" id="main-header">
             <button class="w3-bar-item w3-button w3-xxlarge w3-hover-theme" id="open-sidebar-icon" onclick="openSidebar(100)"><i class="fa fa-bars" aria-hidden="true"></i></button>
-            <h3 class="w3-bar-item" id="main-header-title">Characters</h3>
+            <h3 class="w3-bar-item" id="main-header-title">Baybayin</h3>
         </header>
 
         <div class="w3-container w3-center" style="margin-top:72px">
             <div class="character-represent"></div>
-            <small>These characters stand for '<span class="character-represent"></span>'. Draw a character based from the three characters below.</small>
-            <div id="three-sample-characters-container"></div>
+            <div id="character-hints">
+                <small>These characters stand for '<span class="character-represent"></span>'. Draw a character based from the three characters below.</small>
+                <div id="three-sample-characters-container"></div>
+            </div>
             <div id="sketchpadapp" class="w3-center">
                 <canvas id="sheet" width="200" height="200"></canvas>
                 <canvas id="sheet-small" width="28" height="28" style="display:none;"></canvas>

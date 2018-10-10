@@ -5,12 +5,14 @@ function openSidebar(speed) {
 	$('#my-sidebar').stop().animate({
 	    left:'0px'
 	}, speed, function() {});
+	$('#my-sidebar-filler').show();
 }
 function closeSidebar(speed) {
 	//$("#my-sidebar").css("display", "none");
 	$('#my-sidebar').stop().animate({
 	    left:'-65%'
 	}, speed, function() {});
+	$('#my-sidebar-filler').hide();
 }
 
 $(document).click(function (event) {
