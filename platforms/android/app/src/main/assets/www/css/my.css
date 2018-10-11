@@ -154,7 +154,12 @@ img {
 
 .sample-character-small {
     width: 10%;
-    margin: 2px;
+    margin: 0px;
+}
+
+.sample-character-small-space {
+    width: 10%;
+    margin: 4px;
 }
 
 #sheet {

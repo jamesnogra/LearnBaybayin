@@ -16,19 +16,19 @@
         
         <div id="my-sidebar-filler"></div>
         <nav class="w3-sidebar w3-bar-block w3-card" id="my-sidebar">
-            <a class="w3-bar-item w3-button" href="signup.html">Sign Up</a>
+            <h3 class="w3-bar-item">Hi <span id="user-name"></span>!</h3>
+            <a class="w3-bar-item w3-button" href="index.html">Home</a>
+            <a class="w3-bar-item w3-button" href="signout.html">Sign Out</a>
         </nav>
 
         <header class="w3-top w3-bar w3-theme" id="main-header">
-            <button class="w3-bar-item w3-button w3-xxlarge w3-hover-theme" id="open-sidebar-icon" onclick="openSidebar()"><i class="fa fa-bars" aria-hidden="true"></i></button>
-            <h3 class="w3-bar-item" id="main-header-title">Sign In</h3>
+            <button class="w3-bar-item w3-button w3-xxlarge w3-hover-theme" id="open-sidebar-icon" onclick="openSidebar(100)"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            <h3 class="w3-bar-item" id="main-header-title">Help</h3>
         </header>
 
-        <div class="w3-container" style="margin-top:72px" id="main-content">
-            <input class="w3-input w3-round-large" name="email" id="email" type="email" placeholder="Email" />
-            <input class="w3-input w3-round-large" name="password" id="password" type="password" placeholder="Password" />
-            <center><button id="signup-button" class="w3-button w3-black w3-round-large" onClick="window.location='signup.html';">Sign Up</button></center>
-            <center><button id="login-button" class="w3-button w3-black w3-round-large">Login</button></center>
+        <div class="w3-container w3-center" style="margin-top:72px">
+            <p>In stages 2 to 10, you will be drawing your answers like this</p>
+            <img src="css/how-to.gif" width="75%" />
         </div>
 
         <script type="text/javascript" src="cordova.js"></script>
@@ -37,7 +37,7 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/sidebar.js"></script>
         <script type="text/javascript" src="js/loader.js"></script>
-        <script type="text/javascript" src="js/signin.js"></script>
+        <script type="text/javascript" src="js/check-login.js"></script>
     </body>
 
 
