@@ -16,7 +16,7 @@
         <!--<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"> </script>-->
         <script>
             var stage = getQueryVariable('stage');
-            var all_characters = ['a', 'e_i', 'o_u', 'ba', 'ka', 'da', 'ga', 'ha', 'la', 'ma', 'na', 'nga', 'pa', 'ra', 'sa', 'ta', 'wa', 'ya', 'be_bi', 'ke_ki', 'de_di', 'ge_gi', 'he_hi', 'le_li', 'me_mi', 'ne_ni', 'nge_ngi', 'pe_pi', 're_ri', 'se_si', 'te_ti', 'we_wi', 'ye_yi', 'bo_bu', 'ko_ku', 'do_du', 'go_gu', 'ho_hu', 'lo_lu', 'mo_mu', 'no_nu', 'ngo_ngu', 'po_pu', 'ro_ru', 'so_su', 'to_tu', 'wo_wu', 'yo_yu', 'b', 'k', 'd', 'g', 'h', 'l', 'm', 'n', 'ng', 'p', 'r', 's', 't', 'w', 'y'];
+            var all_characters = ['a', 'e_i', 'o_u', 'ba', 'ka', 'da', 'ga', 'ha', 'la', 'ma', 'na', 'nga', 'pa', 'sa', 'ta', 'wa', 'ya', 'be_bi', 'ke_ki', 'de_di', 'ge_gi', 'he_hi', 'le_li', 'me_mi', 'ne_ni', 'nge_ngi', 'pe_pi', 'se_si', 'te_ti', 'we_wi', 'ye_yi', 'bo_bu', 'ko_ku', 'do_du', 'go_gu', 'ho_hu', 'lo_lu', 'mo_mu', 'no_nu', 'ngo_ngu', 'po_pu', 'so_su', 'to_tu', 'wo_wu', 'yo_yu', 'b', 'k', 'd', 'g', 'h', 'l', 'm', 'n', 'ng', 'p', 's', 't', 'w', 'y'];
             var specific_characters;
             if (stage==2) {
                 specific_characters = ['a', 'e_i', 'o_u'];
@@ -25,13 +25,13 @@
             } else if (stage==4) {
                 specific_characters = ['la', 'ma', 'na', 'nga', 'pa'];
             } else if (stage==5) {
-                specific_characters = ['ra', 'sa', 'ta', 'wa', 'ya'];
+                specific_characters = ['sa', 'ta', 'wa', 'ya'];
             } else if (stage==6) {
-                specific_characters = ['be_bi', 'ke_ki', 'de_di', 'ge_gi', 'he_hi', 'le_li', 'me_mi', 'ne_ni', 'nge_ngi', 'pe_pi', 're_ri', 'se_si', 'te_ti', 'we_wi', 'ye_yi'];
+                specific_characters = ['be_bi', 'ke_ki', 'de_di', 'ge_gi', 'he_hi', 'le_li', 'me_mi', 'ne_ni', 'nge_ngi', 'pe_pi', 'se_si', 'te_ti', 'we_wi', 'ye_yi'];
             } else if (stage==7) {
-                specific_characters = ['bo_bu', 'ko_ku', 'do_du', 'go_gu', 'ho_hu', 'lo_lu', 'mo_mu', 'no_nu', 'ngo_ngu', 'po_pu', 'ro_ru', 'so_su', 'to_tu', 'wo_wu', 'yo_yu'];
+                specific_characters = ['bo_bu', 'ko_ku', 'do_du', 'go_gu', 'ho_hu', 'lo_lu', 'mo_mu', 'no_nu', 'ngo_ngu', 'po_pu', 'so_su', 'to_tu', 'wo_wu', 'yo_yu'];
             } else if (stage==8) {
-                specific_characters = ['b', 'k', 'd', 'g', 'h', 'l', 'm', 'n', 'ng', 'p', 'r', 's', 't', 'w', 'y'];
+                specific_characters = ['b', 'k', 'd', 'g', 'h', 'l', 'm', 'n', 'ng', 'p', 's', 't', 'w', 'y'];
             } else if (stage==9) {
                 all_characters = shuffleArray(all_characters);
                 specific_characters = all_characters.slice(0, 20);

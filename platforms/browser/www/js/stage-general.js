@@ -72,7 +72,8 @@ function showCharacter() {
 		}
 		$('#three-sample-characters-container').html(temp_html);
 		if (stage>=9) { //hide sample images after level 9
-			$(".sample-character").css("filter", "blur("+window.innerWidth/25+"px)");
+			//$(".sample-character").css("filter", "blur("+window.innerWidth/25+"px)");
+			$(".sample-character").attr("src", "img/characters/missing.bmp");
 		}
 		$('.character-represent').html(current_character.replace("_", "/").toUpperCase());	
 	} else { //this is for stage 10
