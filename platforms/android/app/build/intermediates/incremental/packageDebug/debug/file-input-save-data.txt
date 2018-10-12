@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Oct 11 13:58:08 CST 2018
+#Thu Oct 11 14:17:28 CST 2018
 210.set=ASSET
 282.file=C\:\\Users\\lenovo\\Documents\\Projects\\LearnBaybayin\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\img\\characters\\nga.3.bmp
 14.set=ASSET

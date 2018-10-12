@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.iamcebu.learnbaybayin" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Learn Baybayin</name>
+    <name>Learn Baybayín</name>
     <description>
-        An eLearning application for the Baybayin Script. Built using the Apache Cordova platform.
+        An eLearning application for the Baybayín Script. Built using the Apache Cordova platform.
     </description>
     <author email="nogra@outlook.com" href="http://cordova.io">
         GetLoud Tech
