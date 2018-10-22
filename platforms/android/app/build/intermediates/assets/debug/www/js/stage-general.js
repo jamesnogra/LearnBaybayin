@@ -85,7 +85,7 @@ function showCharacter() {
 		}
 		for (var x=0; x<current_sentence_array.length; x++) {
 			if (x != temp_index) {
-				temp_html += '<img src="img/characters/'+current_sentence_array[x]+'.2.bmp" class="sample-character-small'+(current_sentence_array[x]=='space'?'-space':'')+'" />';
+				temp_html += '<img src="img/characters/'+current_sentence_array[x]+'.3.bmp" class="sample-character-small'+(current_sentence_array[x]=='space'?'-space':'')+'" />';
 			} else {
 				temp_html += '<img src="img/characters/missing.bmp" class="sample-character-small" />';
 			}

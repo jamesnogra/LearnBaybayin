@@ -7,9 +7,9 @@
     <feature name="Notification">
         <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
     </feature>
-    <name>Learn Baybayin</name>
+    <name>Learn Baybayín</name>
     <description>
-        An eLearning application for the Baybayin Script. Built using the Apache Cordova platform.
+        An eLearning application for the Baybayín Script. Built using the Apache Cordova platform.
     </description>
     <author email="nogra@outlook.com" href="http://cordova.io">
         GetLoud Tech
