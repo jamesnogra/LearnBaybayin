@@ -45,7 +45,7 @@ $(document).ready(function() {
 	var temp_width = $window.width();
 	var temp_height = $window.height();
 	var temp_dim = (temp_width<temp_height) ? temp_width : temp_height;
-	temp_dim = temp_dim - 50;
+	temp_dim = temp_dim - 75;
 	$("#sheet").attr("width", temp_dim);
 	$("#sheet").attr("height", temp_dim);
 	context = document.getElementById('sheet').getContext("2d");

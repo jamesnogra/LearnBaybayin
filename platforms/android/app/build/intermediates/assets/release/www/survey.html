@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <title>Learn Baybayin</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="stylesheet" href="css/w3-theme.css">
+        <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/my.css">
+        <link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <div id="my-sidebar-filler"></div>
+        <nav class="w3-sidebar w3-bar-block w3-card" id="my-sidebar">
+            <a class="w3-bar-item w3-button" href="signin.html">Sign In</a>
+        </nav>
+
+        <header class="w3-top w3-bar w3-theme" id="main-header">
+            <button class="w3-bar-item w3-button w3-xxlarge w3-hover-theme" id="open-sidebar-icon" onclick="openSidebar()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            <h3 class="w3-bar-item" id="main-header-title">Survey</h3>
+        </header>
+
+        <div class="w3-container" style="margin-top:72px" id="main-content">
+            <div>What is/are your favorite subject/s? You can select more than one or nothing...</div>
+            <div id="subjects-checkboxes">
+                <div class="checkbox-label-container">
+                    <input class="w3-check" type="checkbox" value="filipino" id="filipino">
+                    <label for="filipino">Filipino</label>
+                </div>
+                <div class="checkbox-label-container">
+                    <input class="w3-check" type="checkbox" value="history" id="history">
+                    <label for="history">History</label>
+                </div>
+                <div class="checkbox-label-container">
+                    <input class="w3-check" type="checkbox" value="english" id="english">
+                    <label for="english">English</label>
+                </div>
+                <div class="checkbox-label-container">
+                    <input class="w3-check" type="checkbox" value="science" id="science">
+                    <label for="science">Science</label>
+                </div>
+                <div class="checkbox-label-container">
+                    <input class="w3-check" type="checkbox" value="math" id="math">
+                    <label for="math">Math</label>
+                </div>
+                <div class="checkbox-label-container">
+                    <input class="w3-check" type="checkbox" value="music" id="music">
+                    <label for="music">Music</label>
+                </div>
+                <div class="checkbox-label-container">
+                    <input class="w3-check" type="checkbox" value="values" id="values">
+                    <label for="values">Values</label>
+                </div>
+                <div class="checkbox-label-container">
+                    <input class="w3-check" type="checkbox" value="religion" id="religion">
+                    <label for="religion">Religion</label>
+                </div>
+            </div>
+            <center><button id="submit-survey-button" class="w3-button w3-black w3-round-large">Submit</button></center>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/custom-alert.js"></script>
+        <script type="text/javascript" src="js/jquery3.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/sidebar.js"></script>
+        <script type="text/javascript" src="js/loader.js"></script>
+        <script type="text/javascript" src="js/survey.js"></script>
+    </body>
+
+
+</html>

@@ -7,6 +7,7 @@ $(document).ready(function() {
 		var gender = $('#gender').val();
 		var age = $('#age').val();
 		var education = $('#education').val();
+		var type = $('#type').val();
 		if (!checkEmailDomainIfFake(email)) {
 			customAlert("Email Error", "That domain email is not allowed!", "OK");
 			return;
@@ -35,8 +36,12 @@ $(document).ready(function() {
 			customAlert("Educational Attainment Error", "Please select your educational attainment.", "OK");
 			return;
 		}
+		if (type==null) {
+			customAlert("School Type Error", "Please select your last type of school. Indicate if you are from a private or public school.", "OK");
+			return;
+		}
 		addLoader();
-		$.post("http://learnbaybayinbackend.iamcebu.com/index.php/user/register", {email:email, password:password, name:name, gender:gender, age:age, education:education}, function(result) {
+		$.post("http://learnbaybayinbackend.iamcebu.com/index.php/user/register", {email:email, password:password, name:name, gender:gender, age:age, education:education, type:type}, function(result) {
 			if (result.status==2) {
 				customAlert("Email Error", "The email you entered is used by another registered account. Use another email.", "OK");
 				removeLoader();

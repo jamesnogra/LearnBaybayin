@@ -1,0 +1,168 @@
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color: #fff2cc;
+    /*font-family: 'CrayonFont'!important;*/
+    font-family: 'Schoolbell', cursive;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	/*font-family: 'CrayonFont'!important;*/
+    font-family: 'Schoolbell', cursive;
+}
+
+@font-face {
+  /*font-family: 'CrayonFont';
+  src: url('crayon.ttf');
+  src: url('crayon.ttf') format('truetype'),*/
+}
+
+#my-sidebar {
+    background-color: #ffe699;
+    z-index: 150;
+}
+
+#my-sidebar-filler {
+    position: fixed;
+    background-color: #FFFFFF;
+    opacity: 0.75;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+#main-header {
+    z-index: 150;
+}
+
+.w3-container {
+    padding-top: 10px;
+}
+.w3-input {
+    margin-bottom: 5px;
+}
+
+.checkbox-label-container {
+	margin-bottom: 5px;
+}
+
+.stage-container {
+	background-color: #8307ff;
+	padding: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.stage-complementary-1 {
+	background-color: #ae4cff
+}
+.stage-complementary-2 {
+	background-color: #ff0783
+}
+.stage-complementary-3 {
+	background-color: #66e003
+}
+
+.glossy-frame:before {
+    content:'';
+    position:absolute;
+    width:100%;
+    height:55%;
+    top:-0%;
+    right:-0%;
+    background:rgba(255,255,255,0.25);
+    background: linear-gradient(
+        top,
+        rgba(255,255,255,0.1),
+        rgba(255,255,255,0.3)
+    );
+    border-bottom-left-radius:200px 20px;
+    border-bottom-right-radius: 200px 20px;
+    border-top-right-radius:5px 100px;
+}
+.glossy-frame:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150%;
+    height: 150%;
+    opacity: 0.05;
+    background-image: url('baybayinbg.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.glossy-frame {
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+
+#list-tutorial {
+	margin-bottom: 55px;
+}
+
+img {
+	border-radius: 10px;
+}
+
+#score-card {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	width: 75px;
+	height: 75px;
+	background-color: #FFFFFF;
+	box-shadow: 5px 5px 10px #737373;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	z-index: 200;
+    opacity: 1;
+}
+.score-value {
+	font-size: 28px;
+}
+
+.fa-bars {
+    margin-top: 10px;
+}
+
+#final-score {
+    z-index: 350;
+}
+
+#three-sample-characters-container {
+    text-align: center;
+}
+
+.sample-character {
+    width: 28%;
+    margin: 5px;
+}
+
+.sample-character-small {
+    width: 10%;
+    margin: 0px;
+}
+
+.sample-character-small-space {
+    width: 10%;
+    margin: 4px;
+}
+
+#sheet {
+    border-radius: 10px!important;
+    overflow: hidden!important;
+}
