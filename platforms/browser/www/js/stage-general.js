@@ -45,7 +45,7 @@ $(document).ready(function() {
 	var temp_width = $window.width();
 	var temp_height = $window.height();
 	var temp_dim = (temp_width<temp_height) ? temp_width : temp_height;
-	temp_dim = temp_dim - 50;
+	temp_dim = temp_dim - 75;
 	$("#sheet").attr("width", temp_dim);
 	$("#sheet").attr("height", temp_dim);
 	context = document.getElementById('sheet').getContext("2d");
@@ -85,7 +85,7 @@ function showCharacter() {
 		}
 		for (var x=0; x<current_sentence_array.length; x++) {
 			if (x != temp_index) {
-				temp_html += '<img src="img/characters/'+current_sentence_array[x]+'.2.bmp" class="sample-character-small'+(current_sentence_array[x]=='space'?'-space':'')+'" />';
+				temp_html += '<img src="img/characters/'+current_sentence_array[x]+'.3.bmp" class="sample-character-small'+(current_sentence_array[x]=='space'?'-space':'')+'" />';
 			} else {
 				temp_html += '<img src="img/characters/missing.bmp" class="sample-character-small" />';
 			}
