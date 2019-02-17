@@ -48,6 +48,10 @@
         "source": "C:\\Users\\lenovo\\Documents\\Projects\\LearnBaybayin\\platforms\\android\\app\\src\\main\\res\\drawable-port-mdpi\\screen.png"
     },
     {
+        "merged": "C:\\Users\\lenovo\\Documents\\Projects\\LearnBaybayin\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_sharing_paths.xml.flat",
+        "source": "C:\\Users\\lenovo\\Documents\\Projects\\LearnBaybayin\\platforms\\android\\app\\src\\main\\res\\xml\\sharing_paths.xml"
+    },
+    {
         "merged": "C:\\Users\\lenovo\\Documents\\Projects\\LearnBaybayin\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xhdpi_screen.png.flat",
         "source": "C:\\Users\\lenovo\\Documents\\Projects\\LearnBaybayin\\platforms\\android\\app\\src\\main\\res\\drawable-land-xhdpi\\screen.png"
     },

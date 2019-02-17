@@ -56,6 +56,7 @@ $(document).ready(function() {
 		animateScore();
 		saveScoreToDB();
 		$("#final-score").css("display", "none");
+		shareParams();
 	});
 
 });
@@ -108,4 +109,16 @@ function saveScoreToDB() {
 	$.post("http://learnbaybayinbackend.iamcebu.com/index.php/score/add-score", score_data, function(result) {
 		//none
 	});
+}
+
+//https://play.google.com/store/apps/details?id=com.iamcebu.learnbaybayin
+function shareParams() {
+	try {
+		window.plugins.socialsharing.share('https://play.google.com/store/apps/details?id=com.iamcebu.learnbaybayin', 'Try the Learn Baybayin App!');
+		window.location = "index.html";
+	}
+	catch(err) {
+		console.log(err);
+		alert("Sharing not supported!");
+	}
 }

@@ -47,6 +47,18 @@ $(document).ready(function() {
 		window.location = "index.html";
 	});
 
+	$('#share-button').click(function() {
+		if ((total_score+10) > tutorial_list.length*10) {
+			total_score = tutorial_list.length*10;
+		} else {
+			total_score += 10;
+		}
+		animateScore();
+		saveScoreToDB();
+		$("#final-score").css("display", "none");
+		shareParams();
+	});
+
 });
 
 function displayTutorial() {
@@ -73,6 +85,10 @@ function countTime() {
 		score_for_this_level = 10;
 	}
 	total_score += score_for_this_level;
+	animateScore();
+}
+
+function animateScore() {
 	$('#score-card').addClass('rotate-scale-up');
 	setTimeout(function(){
         $('#score-card').removeClass('rotate-scale-up');
@@ -93,4 +109,16 @@ function saveScoreToDB() {
 	$.post("http://learnbaybayinbackend.iamcebu.com/index.php/score/add-score", score_data, function(result) {
 		//none
 	});
+}
+
+//https://play.google.com/store/apps/details?id=com.iamcebu.learnbaybayin
+function shareParams() {
+	try {
+		window.plugins.socialsharing.share('https://play.google.com/store/apps/details?id=com.iamcebu.learnbaybayin', 'Try the Learn Baybayin App!');
+		window.location = "index.html";
+	}
+	catch(err) {
+		console.log(err);
+		alert("Sharing not supported!");
+	}
 }
