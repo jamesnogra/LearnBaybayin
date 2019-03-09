@@ -6,6 +6,12 @@ body {
     /*font-family: 'CrayonFont'!important;*/
     font-family: 'Schoolbell', cursive;
     font-size: 18px;
+    /*Background image*/
+    background: url("") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Sentence to Baybayin Characters Converter</title>
+	<script type="text/javascript" src="js/jquery3.min.js"></script>
+	<script type="text/javascript" src="js/baybayin-class.js"></script>
+	<script>
+		var temp_sentence = "Ikaw ang yuta nga among gimahal gimahal";
+		var test_baybayin = new Baybayin();
+		current_sentence_array = test_baybayin.tokenize(temp_sentence);
+		$(document).ready(function() {
+		var temp_html = '';
+			for (var x=0; x<current_sentence_array.length; x++) {
+				temp_html += '<img src="img/characters/'+current_sentence_array[x]+'.3.bmp" style="margin-bottom:50px;" />';
+			}
+			$('body').html(temp_html);
+		});
+	</script>
+	<style>
+		html, body { margin:20px; width:200%; }
+	</style>
+</head>
+
+<body>
+	
+</body>
+
+</html>
