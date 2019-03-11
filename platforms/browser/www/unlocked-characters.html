@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <title>Learn Baybayin</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="stylesheet" href="css/w3-theme.css">
+        <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/my.css">
+        <link rel="stylesheet" href="css/zoom-magnify.css">
+        <link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet">
+        <style type="text/css">
+            .unlocked-characters-line {
+                clear: both;
+            }
+            .unlocked-characters-item {
+                float: left;
+                width: 25%;
+                margin-top: 10px;
+            }
+            .unlocked-characters-image {
+                width: 100%;
+                text-align: center;
+            }
+            .unlocked-characters-label {
+                text-align: center;
+                font-size: 12px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <nav class="w3-sidebar w3-bar-block w3-card" id="my-sidebar">
+            <h3 class="w3-bar-item">Hi <span id="user-name"></span>!</h3>
+            <a class="w3-bar-item w3-button" href="help.html">Help</a>
+            <a class="w3-bar-item w3-button" href="privacy.html">Privacy Statement</a>
+            <a class="w3-bar-item w3-button" href="signout.html">Sign Out</a>
+        </nav>
+
+        <header class="w3-top w3-bar w3-theme" id="main-header">
+            <button class="w3-bar-item w3-button w3-xxlarge w3-hover-theme" id="open-sidebar-icon" onclick="openSidebar(100)"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            <h3 class="w3-bar-item" id="main-header-title">Unlocked Characters</h3>
+        </header>
+
+        <div id="unlocked-characters" style="margin-top:72px">
+            <div class="unlocked-characters-line">
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-a"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">A</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-e_i"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">E/I</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-o_u"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">O/U</div>
+                </div>
+            </div>
+            <div class="unlocked-characters-line">
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-ba"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">BA</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-be_bi"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">BE/BI</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-bo_bu"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">BO/BU</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-b"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">B</div>
+                </div>
+            </div>
+            <div class="unlocked-characters-line">
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-ka"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">KA</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-ke_ki"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">KE/KI</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-ko_ku"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">KO/KU</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-k"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">K</div>
+                </div>
+            </div>
+            <div class="unlocked-characters-line">
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-da"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">DA/RA</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-de_di"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">DE/DI/RE/RI</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-do_du"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">DO/DU/RO/RU</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-d"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">D/R</div>
+                </div>
+            </div>
+            <div class="unlocked-characters-line">
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-ga"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">GA</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-ge_gi"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">GE/GI</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-go_gu"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">GO/GU</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-g"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">G</div>
+                </div>
+            </div>
+            <div class="unlocked-characters-line">
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-ha"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">HA</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-he_hi"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">HE/HI</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-ho_hu"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">HO/HU</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-h"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">H</div>
+                </div>
+            </div>
+            <div class="unlocked-characters-line">
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-la"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">LA</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-le_li"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">LE/LI</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-lo_lu"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">LO/LU</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-l"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">L</div>
+                </div>
+            </div>
+            <div class="unlocked-characters-line">
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-ma"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">MA</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-me_mi"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">ME/MI</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-mo_mu"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">MO/MU</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-m"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">M</div>
+                </div>
+            </div>
+            <div class="unlocked-characters-line">
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-na"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">NA</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-ne_ni"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">NE/NI</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-no_nu"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">NO/NU</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-n"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">N</div>
+                </div>
+            </div>
+            <div class="unlocked-characters-line">
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-nga"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">NGA</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-nge_ngi"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">NGE/NGI</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-ngo_ngu"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">NGO/NGU</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-ng"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">NG</div>
+                </div>
+            </div>
+            <div class="unlocked-characters-line">
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-pa"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">PA</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-pe_pi"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">PE/PI</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-po_pu"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">PO/PU</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-p"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">P</div>
+                </div>
+            </div>
+            <div class="unlocked-characters-line">
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-sa"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">SA</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-se_si"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">SE/SI</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-so_su"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">SO/SU</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-s"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">S</div>
+                </div>
+            </div>
+            <div class="unlocked-characters-line">
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-ta"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">TA</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-te_ti"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">TE/TI</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-to_tu"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">TO/TU</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-t"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">T</div>
+                </div>
+            </div>
+            <div class="unlocked-characters-line">
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-wa"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">WA</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-we_wi"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">WE/WI</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-wo_wu"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">WO/WU</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-w"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">W</div>
+                </div>
+            </div>
+            <div class="unlocked-characters-line">
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-ya"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">YA</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-ye_yi"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">YE/YI</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-yo_yu"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">YO/YU</div>
+                </div>
+                <div class="unlocked-characters-item">
+                    <div class="unlocked-characters-image" id="item-y"><img src="img/characters/missing.bmp" width="90%" /></div>
+                    <div class="unlocked-characters-label">Y</div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/custom-alert.js"></script>
+        <script type="text/javascript" src="js/jquery3.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/sidebar.js"></script>
+        <script type="text/javascript" src="js/loader.js"></script>
+        <script type="text/javascript" src="js/check-login.js"></script>
+        <script type="text/javascript" src="js/unlocked-characters.js"></script>
+        <script type="text/javascript" src="js/bg-shuffle.js"></script>
+    </body>
+
+
+</html>

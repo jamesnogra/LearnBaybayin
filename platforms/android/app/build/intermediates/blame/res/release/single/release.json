@@ -4,12 +4,12 @@
         "source": "C:\\Users\\lenovo\\Documents\\Projects\\LearnBaybayin\\platforms\\android\\app\\src\\main\\res\\drawable-port-hdpi\\screen.png"
     },
     {
-        "merged": "D:\\PhoneGap\\LearnBaybayin\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\xml_sharing_paths.xml.flat",
-        "source": "D:\\PhoneGap\\LearnBaybayin\\platforms\\android\\app\\src\\main\\res\\xml\\sharing_paths.xml"
-    },
-    {
         "merged": "C:\\Users\\lenovo\\Documents\\Projects\\LearnBaybayin\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-land-xxhdpi_screen.png.flat",
         "source": "C:\\Users\\lenovo\\Documents\\Projects\\LearnBaybayin\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "D:\\PhoneGap\\LearnBaybayin\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\xml_sharing_paths.xml.flat",
+        "source": "D:\\PhoneGap\\LearnBaybayin\\platforms\\android\\app\\src\\main\\res\\xml\\sharing_paths.xml"
     },
     {
         "merged": "C:\\Users\\lenovo\\Documents\\Projects\\LearnBaybayin\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-port-mdpi_screen.png.flat",

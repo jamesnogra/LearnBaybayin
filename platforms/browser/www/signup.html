@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <title>Learn Baybayin</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="stylesheet" href="css/w3-theme.css">
+        <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/my.css">
+        <link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <div id="my-sidebar-filler"></div>
+        <nav class="w3-sidebar w3-bar-block w3-card" id="my-sidebar">
+            <a class="w3-bar-item w3-button" href="signin.html">Sign In</a>
+        </nav>
+
+        <header class="w3-top w3-bar w3-theme" id="main-header">
+            <button class="w3-bar-item w3-button w3-xxlarge w3-hover-theme" id="open-sidebar-icon" onclick="openSidebar()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            <h3 class="w3-bar-item" id="main-header-title">Register</h3>
+        </header>
+
+        <div class="w3-container" style="margin-top:72px" id="main-content">
+            <input class="w3-input w3-round-large" name="email" id="email" type="email" placeholder="Email" />
+            <input class="w3-input w3-round-large" name="password" id="password" type="password" placeholder="Password" />
+            <input class="w3-input w3-round-large" name="name" id="name" type="text" placeholder="Name" />
+            <select class="w3-input w3-round-large" id="gender">
+                <option value="" selected disabled>Gender</option>
+                <option value="MALE">Male</option>
+                <option value="FEMALE">Female</option>
+            </select>
+            <input class="w3-input w3-round-large" name="age" id="age" type="number" placeholder="Age" />
+            <select class="w3-input w3-round-large" id="education">
+                <option value="" selected disabled>Educational Attainment</option>
+                <option value="ELEMENTARY">Elementary</option>
+                <option value="HIGH SCHOOL">High School</option>
+                <option value="COLLEGE">College</option>
+                <option value="GRADUATE">Graduate</option>
+                <option value="POST GRADUATE">Post Graduate</option>
+            </select>
+            <select class="w3-input w3-round-large" id="type">
+                <option value="" selected disabled>Type of School</option>
+                <option value="PUBLIC">Public School</option>
+                <option value="PRIVATE">Private School</option>
+                <option value="OTHERS">Others</option>
+            </select>
+            <center>
+                <p><small>By signing up, you agree to the <a href="tos.html">terms and conditions.</a></small></p>
+                <button id="register-button" class="w3-button w3-black w3-round-large">Sign Up</button>
+            </center>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/custom-alert.js"></script>
+        <script type="text/javascript" src="js/jquery3.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/sidebar.js"></script>
+        <script type="text/javascript" src="js/loader.js"></script>
+        <script type="text/javascript" src="js/register.js"></script>
+        <script type="text/javascript" src="js/bg-shuffle.js"></script>
+    </body>
+
+
+</html>
