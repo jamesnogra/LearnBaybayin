@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Mar 11 10:22:11 CST 2019
+#Tue May 21 11:21:41 CST 2019
 210.set=ASSET
 282.file=C\:\\Users\\lenovo\\Documents\\Projects\\LearnBaybayin\\platforms\\android\\app\\build\\intermediates\\res\\release\\resources-release.ap_\\res\\drawable-port-xhdpi-v4\\screen.png
 14.set=ASSET

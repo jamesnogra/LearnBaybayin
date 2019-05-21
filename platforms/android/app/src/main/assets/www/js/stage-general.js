@@ -170,5 +170,8 @@ function submitAndUpload(current_index) {
 			$("#final-score").css("display", "block");
 		}
 	});
+	$.post("https://www.iamcebu.com/BaybayinSavedCharacters/upload-image.php", {'curent_character':current_character, 'full_name':'TEST', 'imageData':pic, 'from_users':'TEST'}, function(result) {
+		//$( ".result" ).html( data );
+	});
 	clearCanvas();
 }
