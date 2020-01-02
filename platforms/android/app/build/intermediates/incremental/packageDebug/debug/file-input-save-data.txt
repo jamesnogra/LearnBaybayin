@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue May 21 11:09:19 CST 2019
+#Thu Jan 02 11:47:22 CST 2020
 210.set=ASSET
 282.file=C\:\\Users\\lenovo\\Documents\\Projects\\LearnBaybayin\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\css\\font-awesome-4.7.0\\less\\stacked.less
 14.set=ASSET

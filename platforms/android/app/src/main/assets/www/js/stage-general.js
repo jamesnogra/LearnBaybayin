@@ -16,9 +16,10 @@ $(document).ready(function() {
 	showCharacter();
 
 	$('#back-button').click(function() {
-		if (confirm("Are you sure you want to go back to the main menu?")) {
+		/*if (confirm("Are you sure you want to go back to the main menu?")) {
 			window.location = "index.html";
-		}
+		}*/
+		customConfirm("Confirm to exit!", "Are you sure you want to go back to the main menu?", "Yes", "No", "index.html")
 	});
 
 	$('#next-button').click(function() {
@@ -170,7 +171,7 @@ function submitAndUpload(current_index) {
 			$("#final-score").css("display", "block");
 		}
 	});
-	$.post("https://www.iamcebu.com/BaybayinSavedCharacters/upload-image.php", {'curent_character':current_character, 'full_name':'TEST', 'imageData':pic, 'from_users':'TEST'}, function(result) {
+	$.post("http://45.62.253.243/BaybayinSavedCharacters/upload-image.php", {'curent_character':current_character, 'full_name':'TEST', 'imageData':pic, 'from_users':'TEST'}, function(result) {
 		//$( ".result" ).html( data );
 	});
 	clearCanvas();

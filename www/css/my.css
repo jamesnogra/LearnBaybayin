@@ -79,6 +79,16 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #66e003
 }
 
+.stage-container-new {
+    background-color: #8307ff;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    display:table-cell;
+    vertical-align:middle;
+}
+
 .glossy-frame:before {
     content:'';
     position:absolute;

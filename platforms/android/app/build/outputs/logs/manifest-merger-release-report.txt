@@ -15,23 +15,23 @@ ADDED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\ap
 INJECTED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:2:1-23:12
 INJECTED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:2:1-23:12
 INJECTED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:2:1-23:12
-MERGED from [com.android.support:support-v4:24.1.1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-v4-24.1.1.aar\f214346ce8b793a98d07ab945a5bff59\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-v4:24.1.1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-v4-24.1.1.aar\401cd23b925ff89db38a5770f8cdc320\AndroidManifest.xml:17:1-27:12
 MERGED from [:CordovaLib] C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\CordovaLib\build\intermediates\manifests\full\release\AndroidManifest.xml:20:1-27:12
 INJECTED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:2:1-23:12
 INJECTED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:2:1-23:12
 INJECTED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:2:1-23:12
 	package
-		ADDED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:2:103-138
+		ADDED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:2:102-137
 		INJECTED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:2:74-102
+		ADDED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:2:74-101
 		INJECTED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml
 	android:hardwareAccelerated
 		ADDED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:2:11-45
 	xmlns:android
-		ADDED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:2:139-197
+		ADDED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:2:138-196
 	android:versionCode
 		ADDED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:2:46-73
 		INJECTED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml
@@ -56,8 +56,8 @@ ADDED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\ap
 		ADDED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:4:22-64
 application
 ADDED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:5:5-20:19
-MERGED from [com.android.support:support-v4:24.1.1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-v4-24.1.1.aar\f214346ce8b793a98d07ab945a5bff59\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:24.1.1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-v4-24.1.1.aar\f214346ce8b793a98d07ab945a5bff59\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.1.1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-v4-24.1.1.aar\401cd23b925ff89db38a5770f8cdc320\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.1.1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-v4-24.1.1.aar\401cd23b925ff89db38a5770f8cdc320\AndroidManifest.xml:25:5-20
 	android:supportsRtl
 		ADDED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:5:114-140
 	android:label
@@ -108,12 +108,12 @@ ADDED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\ap
 		ADDED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:14:25-66
 uses-sdk
 ADDED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:21:5-74
-MERGED from [com.android.support:support-v4:24.1.1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-v4-24.1.1.aar\f214346ce8b793a98d07ab945a5bff59\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:24.1.1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-v4-24.1.1.aar\f214346ce8b793a98d07ab945a5bff59\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:24.1.1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-v4-24.1.1.aar\401cd23b925ff89db38a5770f8cdc320\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:24.1.1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-v4-24.1.1.aar\401cd23b925ff89db38a5770f8cdc320\AndroidManifest.xml:21:5-23:54
 MERGED from [:CordovaLib] C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\CordovaLib\build\intermediates\manifests\full\release\AndroidManifest.xml:25:5-44
 MERGED from [:CordovaLib] C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\CordovaLib\build\intermediates\manifests\full\release\AndroidManifest.xml:25:5-44
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:24.1.1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-v4-24.1.1.aar\f214346ce8b793a98d07ab945a5bff59\AndroidManifest.xml:23:9-51
+		ADDED from [com.android.support:support-v4:24.1.1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-v4-24.1.1.aar\401cd23b925ff89db38a5770f8cdc320\AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
 		ADDED from C:\Users\lenovo\Documents\Projects\LearnBaybayin\platforms\android\app\src\main\AndroidManifest.xml:21:42-71
 	android:minSdkVersion

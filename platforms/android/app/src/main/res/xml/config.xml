@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.iamcebu.learnbaybayin" version="1.0.14" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.iamcebu.learnbaybayin" version="2.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="Notification">
         <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
     </feature>
@@ -15,9 +15,9 @@
         An eLearning application for the Baybayín Script. Built using the Apache Cordova platform.
     </description>
     <author email="love.gerald@yahoo.com" href="https://learnbaybayin.iamcebu.com/">
-        GetLoud Tech
+        Learn Baybayín Team
     </author>
-    <widget version="1.0.14" />
+    <widget version="1.0.22" />
     <icon src="res/icon/baybayin-icon.png" />
     <content src="index.html" />
     <access origin="*" />
@@ -27,4 +27,6 @@
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
     <preference name="orientation" value="portrait" />
+    <preference name="android-minSdkVersion" value="21" />
+    <preference name="android-targetSdkVersion" value="28" />
 </widget>

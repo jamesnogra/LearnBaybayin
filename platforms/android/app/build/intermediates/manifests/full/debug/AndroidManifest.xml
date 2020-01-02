@@ -2,12 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.iamcebu.learnbaybayin"
     android:hardwareAccelerated="true"
-    android:versionCode="10012"
-    android:versionName="1.0.12" >
+    android:versionCode="20002"
+    android:versionName="2.0.2" >
 
     <uses-sdk
-        android:minSdkVersion="16"
-        android:targetSdkVersion="26" />
+        android:minSdkVersion="21"
+        android:targetSdkVersion="28" />
 
     <supports-screens
         android:anyDensity="true"

@@ -20,9 +20,10 @@ $(document).ready(function() {
 	displayTutorial();
 
 	$('#back-button').click(function() {
-		if (confirm("Are you sure you want to go back to the main menu?")) {
+		/*if (confirm("Are you sure you want to go back to the main menu?")) {
 			window.location = "index.html";
-		}
+		}*/
+		customConfirm("Confirm to exit!", "Are you sure you want to go back to the main menu?", "OK", "No", "index.html")
 	});
 
 	$('#next-button').click(function() {
